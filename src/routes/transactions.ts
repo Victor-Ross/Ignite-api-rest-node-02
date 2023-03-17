@@ -66,8 +66,6 @@ export async function transactionsRoutes(app: FastifyInstance) {
       });
     }
 
-    console.log(sessionId);
-
     await knex('transactions').insert({
       id: randomUUID(),
       title,
